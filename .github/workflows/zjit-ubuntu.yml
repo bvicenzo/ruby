@@ -114,12 +114,12 @@ jobs:
 
       - uses: ./.github/actions/setup/ubuntu
 
-      - uses: ruby/setup-ruby@4c56a21280b36d862b5fc31348f463d60bdc55d5 # v1.301.0
+      - uses: ruby/setup-ruby@c4e5b1316158f92e3d49443a9d58b31d25ac0f8f # v1.306.0
         with:
           ruby-version: '3.1'
           bundler: none
 
-      - uses: taiki-e/install-action@85b24a67ef0c632dfefad70b9d5ce8fddb040754 # v2.75.10
+      - uses: taiki-e/install-action@481c34c1cf3a84c68b5e46f4eccfc82af798415a # v2.75.23
         with:
           tool: nextest@0.9
         if: ${{ matrix.test_task == 'zjit-check' }}
